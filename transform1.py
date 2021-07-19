@@ -6,14 +6,14 @@ import matplotlib.pyplot as plt
 from skimage import transform
 from skimage import io
 
-im1= io.imread("testimage3.jpg")
+im1= io.imread("frame1.png")
 plt.imshow(im1)
 plt.show()
 
-x=180
-y=50
+x=500
+y=1000
 src = np.array([[0, 0], [x, 0], [0, y], [x, y]])
-dst = np.array([[338, 1423], [795, 530], [349,1527], [864, 559]])
+dst = np.array([[122, 57], [446,87], [86,608], [521, 521]])
 
 
 tform3 = transform.ProjectiveTransform()
